@@ -1,0 +1,279 @@
+k/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap');
+
+/* Body and overall background */
+body {
+  background: #000000;
+  position: relative;
+  color: #f0e6f6;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body::before {
+  content: none;
+}
+
+/* Header */
+header {
+  background-color: transparent;
+  padding: 30px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+}
+
+header ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+header li {
+  background-color: transparent;
+  margin: 0 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+header li:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+header li a {
+  text-decoration: none;
+  color: #f0e6f6;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+header li a:hover {
+  color: #25d366; /* WhatsApp green */
+}
+
+header li img {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #25d366;
+}
+
+/* Main container */
+.tudo {
+  max-width: 1200px;
+  margin: 60px auto 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 20px 60px;
+}
+
+/* Content cards */
+.concientizacao, .mudancas, .maleficios, .ajuda {
+  background: rgba(37, 211, 102, 0.15);
+  border-radius: 25px;
+  padding: 40px 35px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+  color: #e6f4ea;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(37, 211, 102, 0.4);
+}
+
+.concientizacao:hover, .mudancas:hover, .maleficios:hover, .ajuda:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 40px rgba(37, 211, 102, 0.8);
+}
+
+/* Details summary styling */
+details summary {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: #25d366;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+details[open] summary {
+  color: #a1f0a1;
+}
+
+/* Video placeholder */
+.video {
+  width: 320px;
+  height: 220px;
+  background: rgba(37, 211, 102, 0.3);
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e6f4ea;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #e6f4ea;
+  padding: 50px 20px 30px;
+  font-size: 0.95rem;
+  margin-top: auto;
+  box-shadow: inset 0 10px 20px rgba(37, 211, 102, 0.3);
+  border-top: 3px solid #25d366;
+}
+
+footer .superior {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+footer .superior h3 {
+  flex: 1 1 220px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #25d366;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+footer .superior ul, footer .superior lu {
+  list-style: none;
+  padding: 0;
+  color: #e6f4ea;
+}
+
+footer .superior ul li, footer .superior lu li {
+  margin-bottom: 12px;
+  cursor: default;
+  font-weight: 600;
+}
+
+footer .fundo {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #bbb;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tudo {
+    flex-direction: column;
+    align-items: center;
+  }
+  header ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  header li {
+    margin: 10px 0;
+  }
+  .video {
+    width: 90%;
+    height: 180px;
+  }
+  footer .superior {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Call-to-action buttons */
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 0;
+  align-items: center;
+}
+
+.cta-button {
+  background-color: #25d366;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  width: 220px;
+  justify-content: center;
+}
+
+.cta-button:hover {
+  background-color: #1ebe57;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.8);
+}
+
+.cta-button svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+/* Smaller button variant */
+.cta-button.small {
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  width: 180px;
+  gap: 8px;
+}
+
+.cta-button.small svg {
+  width: 16px;
+  height: 16px;
+}

@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.tudo{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    gap: 150px;
+    padding-bottom: 48px;
+ }
+li{
+    list-style: none;
+}
+header ul{
+    border: solid 1px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    border-radius: 10px 10px 10px 10px;
+    align-items: center;
+}
+header li a{
+    text-decoration: none;
+    color: rgb(26, 110, 110);
+}
+header li{
+    background-color: rgb(127, 246, 255);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+.introducao{
+    max-width: 80%;
+    background-color: alrgb(192, 220, 245);
+    padding: 3%;
+    margin: auto;
+}
+.tolo{
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.concientizacao{
+
+    background-color: aliceblue;
+    padding: 3%;
+    border: solid 2px;
+    border-radius: 10px 10px 10px 10px;
+    width: 600px;
+}
+.mudancas{
+    background-color: rgb(212, 232, 249);
+    padding: 3%;
+    border: solid 2px;
+    border-radius: 10px 10px 10px 10px;
+    width: 600px;
+}
+.maleficios{
+    background-color: rgb(164, 198, 228);
+    padding: 3%;
+    border: solid 2px;
+    border-radius: 10px 10px 10px 10px;
+    width: 600px;
+}
+.ajuda{
+    background-color: rgb(104, 130, 152);
+    padding: 3%;
+    border: solid 2px;
+    border-radius: 10px 10px 10px 10px;
+    width: 600px;
+}
+
+.video{
+    border: solid black 2px;
+    width: 250px;
+    justify-content: space-around;
+    align-items: end;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: auto;
+    list-style: none;
+    height: 400px;
+}
+.superior{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.fundo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
